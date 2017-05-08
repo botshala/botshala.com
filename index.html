@@ -1,171 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="ChatBot Consultancy Studio">
-    <meta name="author" content="beep bop boop">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Merriweather' rel='stylesheet' type='text/css'>
 
-    <title>BotShala 🏆</title>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAeAQEBPgICAnUDAwOUBAQEjAQEBIwDAwOTAgICdAEBAT4AAAAgAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIQEBAZlSUlLckJCQ/6Wlpf+np6f/lZWV/1ZWVtsBAQGXAAAAIwAAABIAAAAAAAAAAAAAAAAAAAAAAQEBAQICAiwBAQGqZ2dn/2ZmZv9mZmb/ZmZm/2ZmZv9oaGj/AQEBqAICAiwBAQEBAAAAAAAAAAAAAAAAAgICAQICAkhKRkaotaqq5uja2v/x4+P/8eTk//Hk5P/x4+P/6Nra/7aqquZKRkaoAgICSAICAgEAAAAAAAAAAAICAipLRUWm69rZ/8qqov+/kmj/xpZO/6t9bf+rfW3/xpZO/7+SaP/KqqL/69rZ/0tFRaYCAgIqAAAAAAAAAAACAgJgvK+v2rmel/+NZlr/r4U////MAP+NZlr/jWZa///MAP+vhT//jWZa/7mel/+8r6/aAgICYAAAAAABAQFeAQEBvt7T0/ZzWFD/aEtC/5ZyL///zAD/aEtC/2hLQv//zAD/lnIv/2hLQv9zWFD/3tPT9gEBAb4BAQFeAwMDpYiIiP/e19f/NCYh/zQmIf9xWBf/rooN/zQmIf80JiH/rooN/3FYF/80JiH/NCYh/97X1/+IiIj/AwMDpQQEBEkEBASO2dXV/42Jif8IBgX/CAYF/wgGBf8IBgX/CAYF/wgGBf8IBgX/CAYF/42Jif/Z1dX/BAQEjgQEBEkAAAAAHBwcb9XU1PnNzc3/19bW/9rZ2f/a2tr/2tra/9ra2v/a2tr/2tnZ/9fW1v/Nzc3/1dTU+RwcHG8AAAAAAAAAAC4uLlzOzs7h3t7e/8nJyf+5tLT/s6mp/66hof+uoKD/s6io/7iysv/Jx8f/3t7e/87OzuEuLi5cAAAAAAAAAAAAAAAA2tra//Ly8v/GxcX/6+np/93Z2f/W0ND/1s/P/9zX1//p5ub/xcTE//Ly8v/a2tr/AAAAAAAAAAAAAAAAUVFRDgQEBIzp6enjzs7O//Hw8P/l4+P/4Nzc/+Dc3P/k4uL/8O7u/87Nzf/p6enjBAQEjFFRUQ4AAAAAAAAAAAQEBIxiYmIoBAQEjMrKyuP7/Pz/9/f3//b29v/29vb/9/f3//v7+//KysrjBAQEjGJiYigEBASMAAAAAAQEBIwAAAAAAAAAAAQEBIx/f39pwMDAqu/v79/7+/v4+/v7+O/v79/AwMCqf39/aQQEBIwAAAAAAAAAAAQEBIwAAAAAAAAAAAAAAAAEBASMfHx8DX5+fjd+fn5Ufn5+Y35+fmN+fn5Ufn5+N3x8fA0EBASMAAAAAAAAAAAAAAAA/D8AAPAPAADwDwAA4AcAAMADAADAAwAAgAEAAAAAAACAAQAAwAMAAMADAADAAwAAwAMAAKAFAABoFgAA7/cAAA==" rel="icon" type="image/x-icon" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicomatic/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicomatic/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicomatic/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicomatic/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="img/favicomatic/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicomatic/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicomatic/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicomatic/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="img/favicomatic/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="img/favicomatic/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="img/favicomatic/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="img/favicomatic/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="img/favicomatic/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="img/favicomatic/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="img/favicomatic/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="img/favicomatic/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="img/favicomatic/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="img/favicomatic/mstile-310x310.png" />
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<title>Chestream</title>
+	<!-- #TODO ADD FAVICON CODES -->
 
-    <!-- Theme CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
+	<!-- Colouring the NAV BAR -->
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#1775FC">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#1775FC">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1775FC">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<meta name="description" content="Learning platform for techies" />
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" value="summary">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Chestream.com" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://www.chestream.com" />
+	<meta property="og:image" content="http://chestream.com/img/promo1.png" />
+	<meta property="og:description" content="Illustrated insights from top selling non-fiction books" />
 
 </head>
+<body>
+	<header class="cd-header" data-type="slider-item">
+		<h1>Illustrated insights from top selling books and blogposts</h1>
+	</header>
 
-<body id="page-top" class="index">
+	<section class="cd-fixed-background img-1" data-type="slider-item">
+		<div class="cd-content">
+			<h2>Discover your path to a great career</h2>
+			<p>Learn useful skills in tech and entrepreneurship</p>
+		</div>
+	</section>
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <!-- <img id='small-image' class="img-responsive" src="img/logo.png" alt=""> -->
-                <a class="navbar-brand" id='title-text' href="#page-top">BotShala</a>
-            </div>
+	<section class="cd-fixed-background img-2" data-type="slider-item">
+		<div class="cd-content light-background">
+			<h2>Big ideas in small packages</h2>
+			<p>Bite-sized insights rolled up in interactive videos</p>
+		</div>
+	</section>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <!-- <li class="page-scroll">
-                        <a href="/hellohack/sponsor">Sponsor</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Prizes</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">Register</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li> -->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+	<section class="cd-fixed-background img-3" data-type="slider-item">
+		<div class="cd-content">
+			<h2>World's best rated courses</h2>
+			<p>Summarised, compressed and made interactive</p>
+		</div>
+	</section>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img id='big-image' class="img-responsive" src="img/bg.png" alt="">
-                    <div class="intro-text"><br><br>
-                        <!-- <span class="name">10th-11th September '16</span> -->
-                        <!-- <hr class="star-light"> -->
-                        <span class="skills">Transform your business with a conversational user interface</span>
-                        <br><br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+	<section class="cd-fixed-background img-4" data-type="slider-item">
+		<div class="cd-content">
+			<h2>Launching Soon</h2>
+			<p>
+				Choose from 100+ powerful video shorts. Save your favourite ones offline to keep learning on the go.<br><br>
+				<a class='black' href="https://stomatrix.typeform.com/to/FG9nY3"> SignUp here</a> for early access
 
-    
+			</p>
+		</div>
+	</section>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <!-- <h4><small>About</small> <a href='http://hellomeets.com' target='_blank'>HelloMeets</a></h4>
-                        <p class='small'>We help people learn tech & non-tech skills through offline events with like minded people. </p> -->
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Contact Us</h3>
-                        <h4><a href="mailto:saurav@botshala.com?Subject=HelloHack">saurav@botshala.com</a></h4>
-                        <!-- <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul> -->
-
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <!-- <h4><small>About</small> <a href="https://www.facebook.com/groups/hackathonhunters/" target='_blank'>HackathonHunters</a> </h4>
-                        <p class='small'>Hackathon as a service</p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
+	<nav>
+		<ul class="cd-vertical-nav">
+			<li><a href="#0" class="cd-prev inactive">Next</a></li>
+			<li><a href="#0" class="cd-next">Prev</a></li>
+		</ul> <!-- cd-vertical-nav -->
+	</nav>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
-
 </html>
